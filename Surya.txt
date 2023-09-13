@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+class Base
+{
+public:
+    // Default constructor
+    Base() {
+        cout << "Kiran" << endl; 
+    }
+
+    // Parameterized constructor
+    Base(int value)
+    {
+        // Initialize data members with the provided value
+    }
+};
+class Derived : public Base
+{
+public:
+    // Constructor
+    Derived() : Base() {
+       cout << "Ram" << endl; 
+    }
+
+    // Destructor
+    ~Derived() {
+        // Cleanup operations (e.g., release resources)
+    }
+};
+int main()
+{
+      Derived s1;
+    // Base s1;
+   
+   return 0;
+}
